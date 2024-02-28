@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Threading.Tasks;
 using Aula02RH.models.Enuns;
 
@@ -28,6 +30,18 @@ namespace Aula02RH.Models
         {
             string periodoExperiencia = string.Format("periodo de Experiencia: {0} até {1}", DataAdmissao, DataAdmissao.AddMonths(3));
             return periodoExperiencia;
+        }
+
+        public int ContarCracteres(string dado) {
+            return dado.Length;
+        }
+
+        public bool ValidCPF() {
+            if(ContarCracteres(Cpf) == 1 ) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 }

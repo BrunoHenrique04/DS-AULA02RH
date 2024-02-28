@@ -11,9 +11,9 @@ namespace Aula02RH
             Funcionario Func = new Funcionario();
             
 
-            Func.Id = 10;
+            /*Func.Id = 10;
             Func.Nome = "jacinto";
-            Func.Cpf ="123456789";
+            Func.Cpf ="12345678966";
             Func.DataAdmissao = DateTime.Parse("01/12/14");
             Func.Salario = 48937.00M;
             Func.TipoFuncionario = models.Enuns.TipoFuncionarioEnum.CLT;
@@ -22,7 +22,10 @@ namespace Aula02RH
 
             Console.WriteLine("-------------------------------------------------");
             Console.WriteLine(mensagem);
-            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------");*/
+
+            Console.WriteLine("Digite o ID do funcionarrio: ");
+            Func.Id = int.Parse(Console.ReadLine());
         }
     }
 }
