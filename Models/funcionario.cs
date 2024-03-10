@@ -37,7 +37,7 @@ namespace Aula02RH.Models
         }
 
         public bool ValidCPF() {
-            if(ContarCracteres(Cpf) == 1 ) {
+            if(ContarCracteres(Cpf) == 11 ) {
                 return true;
             } else {
                 return false;
